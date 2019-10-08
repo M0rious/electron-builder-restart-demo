@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+test
+</body>
+<script>
+    const ipcRenderer = require("electron").ipcRenderer;
+    ipcRenderer.send("splash:ready");
+    ipcRenderer.on("splash:update", function (event, status) {
+        document.getElementById("status").innerText = status;
+    })
+</script>
+</html>

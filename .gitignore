@@ -1,0 +1,8 @@
+node_modules
+dist
+workspace.xml
+autostarter.log
+config.log
+release-builds
+sonarlint
+portable
